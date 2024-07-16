@@ -1,0 +1,1 @@
+2024-07-09 18:56:00,040 - ERROR - Error occurred during data insertion into Flight_flight table: Incorrect number of bindings supplied. The current statement uses 10, and there are 11 supplied.

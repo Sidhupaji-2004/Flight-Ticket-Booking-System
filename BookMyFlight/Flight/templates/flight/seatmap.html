@@ -1,0 +1,932 @@
+<!-- We need a container with a border radius at the Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh
+    width : 300px; 
+
+-->
+{% load static %}
+<html lang="en">
+    <head>
+        <title>Seat Selector</title>
+        <link rel="stylesheet" href="{% static 'css/seat.css' %}">
+    </head>
+
+    <body>
+        <div class="plane">
+            <div class="select">
+                <h1 style="font-size: 24px;">Please select the seats</h1>
+                <form action="{% url 'seat_booked' %}"" method="POST">
+                    {% csrf_token %}
+                    <input name="seat" required style="width: 100px;"type="text" placeholder="Seat number">
+                    <button style="width: 115px;"type="submit">Confirm seat</button>
+                </form>
+            </div>
+            <div class="exit special-exit"></div>
+            <ol>
+
+                <li>
+                    <ol class="seats">
+                        <li class="seat">
+                            <input type="checkbox" id="1A" />
+                            <label for="1A">1A</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1B" />
+                            <label for="1B">1B</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1C" />
+                            <label for="1C">1C</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1D" />
+                            <label for="1D">1D</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1E" />
+                            <label for="1E">1E</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1F" />
+                            <label for="1F">1F</label>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <ol class="seats">
+                        <li class="seat">
+                            <input type="checkbox" id="2A" />
+                            <label for="2A">2A</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1B" />
+                            <label for="1B">1B</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1C" />
+                            <label for="1C">1C</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1D" />
+                            <label for="1D">1D</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1E" />
+                            <label for="1E">1E</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1F" />
+                            <label for="1F">1F</label>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <ol class="seats">
+                        <li class="seat">
+                            <input type="checkbox" id="1A" />
+                            <label for="1A">1A</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1B" />
+                            <label for="1B">1B</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1C" />
+                            <label for="1C">1C</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1D" />
+                            <label for="1D">1D</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1E" />
+                            <label for="1E">1E</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1F" />
+                            <label for="1F">1F</label>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <ol class="seats">
+                        <li class="seat">
+                            <input type="checkbox" id="1A" />
+                            <label for="1A">1A</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1B" />
+                            <label for="1B">1B</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1C" />
+                            <label for="1C">1C</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1D" />
+                            <label for="1D">1D</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1E" />
+                            <label for="1E">1E</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1F" />
+                            <label for="1F">1F</label>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <ol class="seats">
+                        <li class="seat">
+                            <input type="checkbox" id="1A" />
+                            <label for="1A">1A</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1B" />
+                            <label for="1B">1B</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1C" />
+                            <label for="1C">1C</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1D" />
+                            <label for="1D">1D</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1E" />
+                            <label for="1E">1E</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1F" />
+                            <label for="1F">1F</label>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <ol class="seats">
+                        <li class="seat">
+                            <input type="checkbox" id="1A" />
+                            <label for="1A">1A</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1B" />
+                            <label for="1B">1B</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1C" />
+                            <label for="1C">1C</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1D" />
+                            <label for="1D">1D</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1E" />
+                            <label for="1E">1E</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1F" />
+                            <label for="1F">1F</label>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <ol class="seats">
+                        <li class="seat">
+                            <input type="checkbox" id="1A" />
+                            <label for="1A">1A</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1B" />
+                            <label for="1B">1B</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1C" />
+                            <label for="1C">1C</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1D" />
+                            <label for="1D">1D</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1E" />
+                            <label for="1E">1E</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1F" />
+                            <label for="1F">1F</label>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+            <div class="exit"></div>
+            <ol>
+                <li>
+                    <ol class="seats">
+                        <li class="seat">
+                            <input type="checkbox" id="1A" />
+                            <label for="1A">1A</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1B" />
+                            <label for="1B">1B</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1C" />
+                            <label for="1C">1C</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1D" />
+                            <label for="1D">1D</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1E" />
+                            <label for="1E">1E</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1F" />
+                            <label for="1F">1F</label>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <ol class="seats">
+                        <li class="seat">
+                            <input type="checkbox" id="1A" />
+                            <label for="1A">1A</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1B" />
+                            <label for="1B">1B</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1C" />
+                            <label for="1C">1C</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1D" />
+                            <label for="1D">1D</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1E" />
+                            <label for="1E">1E</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1F" />
+                            <label for="1F">1F</label>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <ol class="seats">
+                        <li class="seat">
+                            <input type="checkbox" id="1A" />
+                            <label for="1A">1A</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1B" />
+                            <label for="1B">1B</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1C" />
+                            <label for="1C">1C</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1D" />
+                            <label for="1D">1D</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1E" />
+                            <label for="1E">1E</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1F" />
+                            <label for="1F">1F</label>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <ol class="seats">
+                        <li class="seat">
+                            <input type="checkbox" id="1A" />
+                            <label for="1A">1A</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1B" />
+                            <label for="1B">1B</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1C" />
+                            <label for="1C">1C</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1D" />
+                            <label for="1D">1D</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1E" />
+                            <label for="1E">1E</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1F" />
+                            <label for="1F">1F</label>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <ol class="seats">
+                        <li class="seat">
+                            <input type="checkbox" id="1A" />
+                            <label for="1A">1A</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1B" />
+                            <label for="1B">1B</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1C" />
+                            <label for="1C">1C</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1D" />
+                            <label for="1D">1D</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1E" />
+                            <label for="1E">1E</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1F" />
+                            <label for="1F">1F</label>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <ol class="seats">
+                        <li class="seat">
+                            <input type="checkbox" id="1A" />
+                            <label for="1A">1A</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1B" />
+                            <label for="1B">1B</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1C" />
+                            <label for="1C">1C</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1D" />
+                            <label for="1D">1D</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1E" />
+                            <label for="1E">1E</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1F" />
+                            <label for="1F">1F</label>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <ol class="seats">
+                        <li class="seat">
+                            <input type="checkbox" id="1A" />
+                            <label for="1A">1A</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1B" />
+                            <label for="1B">1B</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1C" />
+                            <label for="1C">1C</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1D" />
+                            <label for="1D">1D</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1E" />
+                            <label for="1E">1E</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1F" />
+                            <label for="1F">1F</label>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <ol class="seats">
+                        <li class="seat">
+                            <input type="checkbox" id="1A" />
+                            <label for="1A">1A</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1B" />
+                            <label for="1B">1B</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1C" />
+                            <label for="1C">1C</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1D" />
+                            <label for="1D">1D</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1E" />
+                            <label for="1E">1E</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1F" />
+                            <label for="1F">1F</label>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <ol class="seats">
+                        <li class="seat">
+                            <input type="checkbox" id="1A" />
+                            <label for="1A">1A</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1B" />
+                            <label for="1B">1B</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1C" />
+                            <label for="1C">1C</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1D" />
+                            <label for="1D">1D</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1E" />
+                            <label for="1E">1E</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1F" />
+                            <label for="1F">1F</label>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <ol class="seats">
+                        <li class="seat">
+                            <input type="checkbox" id="1A" />
+                            <label for="1A">1A</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1B" />
+                            <label for="1B">1B</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1C" />
+                            <label for="1C">1C</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1D" />
+                            <label for="1D">1D</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1E" />
+                            <label for="1E">1E</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1F" />
+                            <label for="1F">1F</label>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <ol class="seats">
+                        <li class="seat">
+                            <input type="checkbox" id="1A" />
+                            <label for="1A">1A</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1B" />
+                            <label for="1B">1B</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1C" />
+                            <label for="1C">1C</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1D" />
+                            <label for="1D">1D</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1E" />
+                            <label for="1E">1E</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1F" />
+                            <label for="1F">1F</label>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <ol class="seats">
+                        <li class="seat">
+                            <input type="checkbox" id="1A" />
+                            <label for="1A">1A</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1B" />
+                            <label for="1B">1B</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1C" />
+                            <label for="1C">1C</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1D" />
+                            <label for="1D">1D</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1E" />
+                            <label for="1E">1E</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1F" />
+                            <label for="1F">1F</label>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <ol class="seats">
+                        <li class="seat">
+                            <input type="checkbox" id="1A" />
+                            <label for="1A">1A</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1B" />
+                            <label for="1B">1B</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1C" />
+                            <label for="1C">1C</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1D" />
+                            <label for="1D">1D</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1E" />
+                            <label for="1E">1E</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1F" />
+                            <label for="1F">1F</label>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <ol class="seats">
+                        <li class="seat">
+                            <input type="checkbox" id="1A" />
+                            <label for="1A">1A</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1B" />
+                            <label for="1B">1B</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1C" />
+                            <label for="1C">1C</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1D" />
+                            <label for="1D">1D</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1E" />
+                            <label for="1E">1E</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1F" />
+                            <label for="1F">1F</label>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <ol class="seats">
+                        <li class="seat">
+                            <input type="checkbox" id="1A" />
+                            <label for="1A">1A</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1B" />
+                            <label for="1B">1B</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1C" />
+                            <label for="1C">1C</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1D" />
+                            <label for="1D">1D</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1E" />
+                            <label for="1E">1E</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1F" />
+                            <label for="1F">1F</label>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <ol class="seats">
+                        <li class="seat">
+                            <input type="checkbox" id="1A" />
+                            <label for="1A">1A</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1B" />
+                            <label for="1B">1B</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1C" />
+                            <label for="1C">1C</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1D" />
+                            <label for="1D">1D</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1E" />
+                            <label for="1E">1E</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1F" />
+                            <label for="1F">1F</label>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <ol class="seats">
+                        <li class="seat">
+                            <input type="checkbox" id="1A" />
+                            <label for="1A">1A</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1B" />
+                            <label for="1B">1B</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1C" />
+                            <label for="1C">1C</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1D" />
+                            <label for="1D">1D</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1E" />
+                            <label for="1E">1E</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1F" />
+                            <label for="1F">1F</label>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+            <div class="exit"></div>
+            <ol>
+                <li>
+                    <ol class="seats">
+                        <li class="seat">
+                            <input type="checkbox" id="1A" />
+                            <label for="1A">1A</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1B" />
+                            <label for="1B">1B</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1C" />
+                            <label for="1C">1C</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1D" />
+                            <label for="1D">1D</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1E" />
+                            <label for="1E">1E</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1F" />
+                            <label for="1F">1F</label>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <ol class="seats">
+                        <li class="seat">
+                            <input type="checkbox" id="1A" />
+                            <label for="1A">1A</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1B" />
+                            <label for="1B">1B</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1C" />
+                            <label for="1C">1C</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1D" />
+                            <label for="1D">1D</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1E" />
+                            <label for="1E">1E</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1F" />
+                            <label for="1F">1F</label>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <ol class="seats">
+                        <li class="seat">
+                            <input type="checkbox" id="1A" />
+                            <label for="1A">1A</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1B" />
+                            <label for="1B">1B</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1C" />
+                            <label for="1C">1C</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1D" />
+                            <label for="1D">1D</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1E" />
+                            <label for="1E">1E</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1F" />
+                            <label for="1F">1F</label>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <ol class="seats">
+                        <li class="seat">
+                            <input type="checkbox" id="1A" />
+                            <label for="1A">1A</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1B" />
+                            <label for="1B">1B</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1C" />
+                            <label for="1C">1C</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1D" />
+                            <label for="1D">1D</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1E" />
+                            <label for="1E">1E</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1F" />
+                            <label for="1F">1F</label>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <ol class="seats">
+                        <li class="seat">
+                            <input type="checkbox" id="1A" />
+                            <label for="1A">1A</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1B" />
+                            <label for="1B">1B</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1C" />
+                            <label for="1C">1C</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1D" />
+                            <label for="1D">1D</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1E" />
+                            <label for="1E">1E</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1F" />
+                            <label for="1F">1F</label>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <ol class="seats">
+                        <li class="seat">
+                            <input type="checkbox" id="1A" />
+                            <label for="1A">1A</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1B" />
+                            <label for="1B">1B</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1C" />
+                            <label for="1C">1C</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1D" />
+                            <label for="1D">1D</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1E" />
+                            <label for="1E">1E</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1F" />
+                            <label for="1F">1F</label>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <ol class="seats">
+                        <li class="seat">
+                            <input type="checkbox" id="1A" />
+                            <label for="1A">1A</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1B" />
+                            <label for="1B">1B</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1C" />
+                            <label for="1C">1C</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1D" />
+                            <label for="1D">1D</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1E" />
+                            <label for="1E">1E</label>
+                        </li>
+                        <li class="seat">
+                            <input type="checkbox" id="1F" />
+                            <label for="1F">1F</label>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+            <div class="select">
+                <h1>The Tail</h1>
+            </div>
+        </div>
+    </body>
+</html>

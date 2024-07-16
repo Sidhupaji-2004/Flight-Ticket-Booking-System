@@ -1,0 +1,15 @@
+{% extends 'flight/layout.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/web_checkin.css' %}">
+    <title>WebCheckIn | Flight</title>
+{% endblock %}
+
+{% block body %}
+    <h2>WEB CHECK-IN</h2>
+    <form action="{% url 'web_checkin' %}"method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Check In</button>
+    </form>
+{% endblock %}
