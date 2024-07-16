@@ -2,9 +2,37 @@
 
 A Flight Ticket Booking System built using Django, HTML, CSS, JavaScript, SQLite3, and Python.
 
+<div class="image-container">
+    <img src="https://github.com/user-attachments/assets/46681a04-74c8-4acb-8e73-b46779327ef0" alt="Image 1">
+    <img src="https://github.com/user-attachments/assets/662992fa-2191-492e-a484-b58b3070380e" alt="Image 2">
+    <img src="https://github.com/user-attachments/assets/dcc41075-aedb-4e0d-a3e9-8ca5d4303b6a" alt="Image 3">
+    <img src="https://github.com/user-attachments/assets/03b69341-965e-46b4-ba42-a308ed07f5ad" alt="Image 4">
+    <img src="https://github.com/user-attachments/assets/1f941a16-e5b5-4af7-9265-70854db560f1" alt="Image 5">
+    <img src="https://github.com/user-attachments/assets/10972a99-dd5b-47a0-bce8-6baeeb4e0839" alt="Image 6">
+</div>
+
+<style>
+    .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+        margin: 10px;
+        flex: 1 1 calc(33.333% - 20px);
+        box-sizing: border-box;
+    }
+</style>
+
 ## Description ℹ️
 
 The Flight Ticket Booking System is a web application that allows users to search for flights, view flight details, and book tickets online. It provides a seamless user experience for managing flight bookings, incorporating a range of features for both administrators and users.
+
+![image](https://github.com/user-attachments/assets/b7c1b364-6758-4148-83dd-c6ef62d622ec)
+
 
 ## Features ✨
 
