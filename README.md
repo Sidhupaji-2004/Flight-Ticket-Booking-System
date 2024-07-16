@@ -1,6 +1,3 @@
-Certainly! Here's the updated markdown for your Flight Ticket Booking System README:
-
-```markdown
 # Flight Ticket Booking System 🛫💺
 
 A Flight Ticket Booking System built using Django, HTML, CSS, JavaScript, SQLite3, and Python.
@@ -97,9 +94,7 @@ Contributions and feature requests are welcome! Please fork the repository, make
 ## License 📝
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-```
-
-### Explanation:
+## Explanation:
 - **Description**: Provides an overview of the system's purpose and capabilities.
 - **Features**: Lists key functionalities of the system.
 - **Technologies Used**: Specifies the technologies employed in both backend and frontend development.
@@ -108,5 +103,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - **Usage**: Describes how users can interact with the application, from registration and login to booking management and admin tasks.
 - **Contributing**: Encourages contributions and outlines the process for contributing to the project.
 - **License**: Specifies the project's licensing terms for clarity on usage and distribution rights.
-
-This README format is comprehensive, informative, and user-friendly, making it easier for users and contributors to understand, use, and contribute to your Flight Ticket Booking System project on GitHub.
