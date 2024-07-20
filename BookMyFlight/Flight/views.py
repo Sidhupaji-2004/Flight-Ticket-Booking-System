@@ -434,72 +434,46 @@ def book(request):
     else:
         return HttpResponse("Method must be post.")
 
-
 def payment(request):
-    """
-    The `payment` function processes a payment request, creates a Razorpay order, and renders a payment
-    processing page with necessary details.
-    
-    :param request: The `payment` function is a view function in Django that handles payment processing.
-    It checks if the user is authenticated, processes the payment details from a POST request, and then
-    creates a Razorpay order for payment processing
-    
-    :return: The code snippet is a Django view function named `payment`. It handles a POST request for
-    processing a payment. If the user is authenticated, it retrieves ticket information and creates a
-    Razorpay order for payment processing. If the fare value is missing or invalid, it returns an error
-    message. If the payment processing is successful, it renders a payment processing template with the
-    necessary context data. If any exceptions occur
-    """
     if request.user.is_authenticated:
         if request.method == 'POST':
-            ticket_id = request.POST.get('ticket')
+            ticket_id = request.POST['ticket']
             t2 = False
-            ticket2_id = None
             if request.POST.get('ticket2'):
-                ticket2_id = request.POST.get('ticket2')
+                ticket2_id = request.POST['ticket2']
                 t2 = True
             fare = request.POST.get('fare')
-            print(fare)
-
-            if not fare:
-                return HttpResponse("Fare is required.")
-            
-            try:
-                amount = int(float(fare) * 100)  # Convert fare to paisa
-            except ValueError:
-                return HttpResponse("Invalid fare value.")
+            card_number = request.POST['card_number']
+            card_holder_name = request.POST['cardHolderName']
+            exp_month = request.POST['expMonth']
+            exp_year = request.POST['expYear']
+            cvv = request.POST['cvv']
 
             try:
+                print(ticket_id)
                 ticket = Ticket.objects.get(id=ticket_id)
-                print("checkpoint passed")
-                razorpay_order = razorpay_client.order.create({
-                    "amount": amount,
-                    "currency": "INR",
-                    "payment_capture": "1"
-                })
-
-                if razorpay_order: 
-                    print("Success")
-                else: 
-                    print("I think the credentials are incorrect")
-
-                context = {
+                ticket.status = 'CONFIRMED'
+                ticket.booking_date = datetime.now()
+                ticket.save()
+                if t2:
+                    ticket2 = Ticket.objects.get(id=ticket2_id)
+                    ticket2.status = 'CONFIRMED'
+                    ticket2.save()
+                    return render(request, 'flight/payment_process.html', {
+                        'ticket1': ticket,
+                        'ticket2': ticket2
+                    })
+                return render(request, 'flight/payment_process.html', {
                     'ticket1': ticket,
-                    'ticket2': ticket2_id if t2 else "",
-                    'razorpay_order_id': razorpay_order['id'],
-                    'razorpay_merchant_key': settings.RAZORPAY_KEY_ID,
-                    'amount': amount,
-                    'currency': 'INR',
-                    'callback_url': reverse('paymenthandler')
-                }
-                return render(request, 'flight/payment_process.html', context)
+                    'ticket2': ""
+                })
             except Exception as e:
-                print("Here it failed")
-                return HttpResponse(str(e))
+                return HttpResponse(e)
         else:
-            return HttpResponse("Method must be POST.")
+            return HttpResponse("Method must be post.")
     else:
         return HttpResponseRedirect(reverse('login'))
+
 
 def paymenthandler(request):
     """
@@ -724,10 +698,11 @@ def seat_confirmation(request):
             seat_numbers = request.POST.get('seat')
             if seat_numbers:
                 print(request.user.email)
+                message = f'You have selected seat numbers {seat_numbers}.'
                 send_mail(
                     'Web Checkin confirmation', 
-                    f'You have selected seat numbers {seat_numbers}.',
-                    settings.EMAIL_HOST_USER,
+                    message,
+                    'settings.EMAIL_HOST_USER',
                     [request.user.email],
                     fail_silently=False
                 )
