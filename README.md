@@ -3,11 +3,11 @@
 A Flight Ticket Booking System built using Django, HTML, CSS, JavaScript, SQLite3, and Python.
 
 <div style="display: flex; flex-wrap: nowrap; justify-content: space-around; align-items: center;">
-    <img src="https://github.com/user-attachments/assets/46681a04-74c8-4acb-8e73-b46779327ef0" alt="Image 1" style="max-width: 100%; height: auto; margin: 10px; flex: 1 1 calc(33.333% - 20px); box-sizing: border-box;">
-    <img src="https://github.com/user-attachments/assets/662992fa-2191-492e-a484-b58b3070380e" alt="Image 2" style="max-width: 100%; height: auto; margin: 10px; flex: 1 1 calc(33.333% - 20px); box-sizing: border-box;">
-    <img src="https://github.com/user-attachments/assets/dcc41075-aedb-4e0d-a3e9-8ca5d4303b6a" alt="Image 3" style="max-width: 100%; height: auto; margin: 10px; flex: 1 1 calc(33.333% - 20px); box-sizing: border-box;">
-    <img src="https://github.com/user-attachments/assets/10972a99-dd5b-47a0-bce8-6baeeb4e0839" alt="Image 6" style="max-width: 100%; height: auto; margin: 10px; flex: 1 1 calc(33.333% - 20px); box-sizing: border-box;">
-    <img src="https://github.com/user-attachments/assets/3ee32c27-b5c8-4710-bb92-ed818197cad8" alt="Image 5" style="max-width: 100%; height: auto; margin: 10px; flex: 1 1 calc(33.333% - 20px); box-sizing: border-box;">
+    <img src="https://github.com/user-attachments/assets/46681a04-74c8-4acb-8e73-b46779327ef0" alt="Image 1" style="max-width: 100%; height: 200px; margin: 10px; flex: 1 1 calc(33.333% - 20px); box-sizing: border-box;">
+    <img src="https://github.com/user-attachments/assets/662992fa-2191-492e-a484-b58b3070380e" alt="Image 2" style="max-width: 100%; height: 200px; margin: 10px; flex: 1 1 calc(33.333% - 20px); box-sizing: border-box;">
+    <img src="https://github.com/user-attachments/assets/dcc41075-aedb-4e0d-a3e9-8ca5d4303b6a" alt="Image 3" style="max-width: 100%; height: 200px; margin: 10px; flex: 1 1 calc(33.333% - 20px); box-sizing: border-box;">
+    <img src="https://github.com/user-attachments/assets/10972a99-dd5b-47a0-bce8-6baeeb4e0839" alt="Image 6" style="max-width: 100%; height: 200px; margin: 10px; flex: 1 1 calc(33.333% - 20px); box-sizing: border-box;">
+    <img src="https://github.com/user-attachments/assets/3ee32c27-b5c8-4710-bb92-ed818197cad8" alt="Image 5" style="max-width: 100%; height: 200px; margin: 10px; flex: 1 1 calc(33.333% - 20px); box-sizing: border-box;">
 </div>
 ## Description ℹ️
 
