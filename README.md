@@ -7,12 +7,13 @@ A Flight Ticket Booking System built using Django, HTML, CSS, JavaScript, SQLite
     <img src="https://github.com/user-attachments/assets/662992fa-2191-492e-a484-b58b3070380e" alt="Image 2" width="200" height="200">
     <img src="https://github.com/user-attachments/assets/dcc41075-aedb-4e0d-a3e9-8ca5d4303b6a" alt="Image 3" width="350" height="200">
     <img src="https://github.com/user-attachments/assets/10972a99-dd5b-47a0-bce8-6baeeb4e0839" alt="Image 6" width="200" height="200">
+    ![image](https://github.com/user-attachments/assets/3ee32c27-b5c8-4710-bb92-ed818197cad8)
 </div>
 
 <style>
     .image-container {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: space-around;
         align-items: center;
     }
