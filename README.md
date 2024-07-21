@@ -2,31 +2,13 @@
 
 A Flight Ticket Booking System built using Django, HTML, CSS, JavaScript, SQLite3, and Python.
 
-<div class="image-container">
-    <img src="https://github.com/user-attachments/assets/46681a04-74c8-4acb-8e73-b46779327ef0" alt="Image 1" width="200" height="200">
-    <img src="https://github.com/user-attachments/assets/662992fa-2191-492e-a484-b58b3070380e" alt="Image 2" width="200" height="200">
-    <img src="https://github.com/user-attachments/assets/dcc41075-aedb-4e0d-a3e9-8ca5d4303b6a" alt="Image 3" width="350" height="200">
-    <img src="https://github.com/user-attachments/assets/10972a99-dd5b-47a0-bce8-6baeeb4e0839" alt="Image 6" width="200" height="200">
-    <img src="https://github.com/user-attachments/assets/3ee32c27-b5c8-4710-bb92-ed818197cad8" alt="Image 5" width="200" height="200">
+<div style="display: flex; flex-wrap: nowrap; justify-content: space-around; align-items: center;">
+    <img src="https://github.com/user-attachments/assets/46681a04-74c8-4acb-8e73-b46779327ef0" alt="Image 1" style="max-width: 100%; height: auto; margin: 10px; flex: 1 1 calc(33.333% - 20px); box-sizing: border-box;">
+    <img src="https://github.com/user-attachments/assets/662992fa-2191-492e-a484-b58b3070380e" alt="Image 2" style="max-width: 100%; height: auto; margin: 10px; flex: 1 1 calc(33.333% - 20px); box-sizing: border-box;">
+    <img src="https://github.com/user-attachments/assets/dcc41075-aedb-4e0d-a3e9-8ca5d4303b6a" alt="Image 3" style="max-width: 100%; height: auto; margin: 10px; flex: 1 1 calc(33.333% - 20px); box-sizing: border-box;">
+    <img src="https://github.com/user-attachments/assets/10972a99-dd5b-47a0-bce8-6baeeb4e0839" alt="Image 6" style="max-width: 100%; height: auto; margin: 10px; flex: 1 1 calc(33.333% - 20px); box-sizing: border-box;">
+    <img src="https://github.com/user-attachments/assets/3ee32c27-b5c8-4710-bb92-ed818197cad8" alt="Image 5" style="max-width: 100%; height: auto; margin: 10px; flex: 1 1 calc(33.333% - 20px); box-sizing: border-box;">
 </div>
-
-<style>
-    .image-container {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .image-container img {
-        max-width: 100%;
-        height: auto;
-        margin: 10px;
-        flex: 1 1 calc(33.333% - 20px);
-        box-sizing: border-box;
-    }
-</style>
-
-
 ## Description ℹ️
 
 The Flight Ticket Booking System is a web application that allows users to search for flights, view flight details, and book tickets online. It provides a seamless user experience for managing flight bookings, incorporating a range of features for both administrators and users.
