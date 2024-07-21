@@ -89,13 +89,13 @@ Follow these steps to set up and run the Flight Ticket Booking System on your lo
 
 ## Usage 👩‍💻👨‍💻
 
-- **User Registration and Login:** Navigate to `/accounts/register/` to create a new user account or `/accounts/login/` to log in.
 - **Flight Search:** Use the search feature to find flights based on origin, destination, and date.
+- **Filtering of Flights:** Filter flights according to departure and arrival times and also according to budget. 
 - **Booking Management:** Book tickets for available flights, view booking details, and manage bookings through the user dashboard.
 - **Administrator Panel:** Access `/admin/` to manage flights, users, and bookings via a dedicated admin interface.
-- **Payment Integration:** Seamless integration with payment gateways for secure online transactions.
 - **Email Notifications:** Automatic email notifications and confirmations for booking and web check-in operations.
 - **Web Check-in:** Convenient web check-in feature allowing users to select seats using a seat map.
+- **E-Ticket** E-ticket generation in the form of pdf.
 
 ## Contributing 🤝
 
